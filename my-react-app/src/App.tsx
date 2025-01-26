@@ -1,12 +1,12 @@
 /** @format */
 
 import './index.css';
-import DataFetch from './projects/dataFetching';
+import FetchData from './projects/axiosDataFetch';
 
 function App() {
   return (
     <>
-      <DataFetch />
+      <FetchData />
     </>
   );
 }
