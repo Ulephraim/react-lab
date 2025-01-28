@@ -1,0 +1,88 @@
+{
+  " users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "username": "johndoe28",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "website": "http://johndoe.com"
+    },
+    {
+      "id": "3",
+      "name": "Sam Green",
+      "username": "samgreen22",
+      "email": "sam.green@example.com",
+      "phone": "+1122334455",
+      "website": "http://samgreen.com"
+    },
+    {
+      "id": "4",
+      "name": "Chris Brown James",
+      "username": "chrisbrown45",
+      "email": "chris.brown.james@example.com",
+      "phone": "+1233211234",
+      "website": "http://chrisbrown.com"
+    },
+    {
+      "id": "5",
+      "name": "Patricia Miller Son",
+      "username": "patriciamiller30",
+      "email": "patricia.miller@example.com",
+      "phone": "+1999888777",
+      "website": "http://patriciamiller.com"
+    },
+    {
+      "id": "6",
+      "name": "Michael Clark",
+      "username": "michaelclark38",
+      "email": "michael.clark@example.com",
+      "phone": "+1444332211",
+      "website": "http://michaelclark.com"
+    },
+    {
+      "id": "7",
+      "name": "Sarah Lewis",
+      "username": "sarahlewis27",
+      "email": "sarah.lewis@example.com",
+      "phone": "+1888777666",
+      "website": "http://sarahlewis.com"
+    },
+    {
+      "id": "8",
+      "name": "James White",
+      "username": "jameswhite55",
+      "email": "james.white@example.com",
+      "phone": "+1777888999",
+      "website": "http://jameswhite.com"
+    },
+    {
+      "id": "9",
+      "name": "Linda Harris",
+      "username": "lindaharris40",
+      "email": "linda.harris@example.com",
+      "phone": "+1555443322",
+      "website": "http://lindaharris.com"
+    },
+    {
+      "id": "10",
+      "name": "Robert Martin",
+      "username": "robertmartin50",
+      "email": "robert.martin@example.com",
+      "phone": "+1333224433",
+      "website": "http://robertmartin.com"
+    },
+    {
+      "id": "a4fd",
+      "name": "Ephraim",
+      "email": "ephraim@example.com",
+      "phone": "08166145418"
+    },
+    {
+      "id": "c7d0",
+      "name": "Press cott",
+      "email": "aaaa@example.com",
+      "phone": "000-222-111-633"
+    }
+  ]
+}

@@ -2,23 +2,13 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
   margin: 2rem;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 /* Page button styling */
 .page-btn {
-  background-color: rgb(78, 78, 255);
-  color: white;
   padding: 1rem;
   font-size: 1rem;
   border-radius: 20px;
@@ -37,7 +27,7 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #333; /* A lighter dark background for content */
+  /* A lighter dark background for content */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -45,7 +35,7 @@
 /* Heading styling */
 h3 {
   text-align: center;
-  color: #fff; /* White text for better contrast */
+  /* White text for better contrast */
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -61,31 +51,202 @@ h3 {
 .table td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #444; /* Darker border for better contrast */
+  border: 1px solid #4e3939; /* Darker border for better contrast */
 }
 
 .table th {
-  background-color: #444; /* Dark background for the header */
-  color: #fff; /* White text in header */
+  background-color: white; /* Dark background for the header */
+
   font-weight: bold;
-}
-
-.table tr:nth-child(even) {
-  background-color: #333; /* Slightly darker background for even rows */
-}
-
-.table tr:hover {
-  background-color: #555; /* Darker hover effect for row */
 }
 
 .table td {
   font-size: 14px;
-  color: #ddd; /* Lighter text color for table data */
 }
 
-/* General styling improvements */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #242424;
-  color: #ddd;
+.btn-primary {
+  background-color: blue;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.btn-secondary {
+  margin-left: 0.8rem;
+  color: white;
+  background-color: red;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.btn-info {
+  margin-right: 0.8rem;
+  color: white;
+  background-color: green;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.create-btn {
+  margin-right: 0.8rem;
+  color: white;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.create-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Home.css */
+
+/* General container for the form */
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the form */
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for input fields */
+.input-field {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Styling for the submit button */
+.submit-btn {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.back-btn {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-left: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.back-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.back-btn:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+/* Styling for the table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+}
+
+/* Basic styling for the Read component */
+
+.user-details-container {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-details {
+  margin-bottom: 30px;
+}
+
+.user-info {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+strong {
+  color: #555;
+}
+
+.actions {
+  text-align: center;
+}
+
+.edit-btn,
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover,
+.back-btn:hover {
+  background-color: #45a049;
+}
+
+.back-btn {
+  background-color: #f44336;
+}
+
+.back-btn:hover {
+  background-color: #e53935;
 }
