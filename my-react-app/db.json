@@ -1,14 +1,6 @@
 {
   " users": [
     {
-      "id": "1",
-      "name": "John Doe",
-      "username": "johndoe28",
-      "email": "john.doe@example.com",
-      "phone": "+1234567890",
-      "website": "http://johndoe.com"
-    },
-    {
       "id": "3",
       "name": "Sam Green",
       "username": "samgreen22",
@@ -58,7 +50,7 @@
     },
     {
       "id": "9",
-      "name": "Linda Harris",
+      "name": "Linda Harris Junior",
       "username": "lindaharris40",
       "email": "linda.harris@example.com",
       "phone": "+1555443322",
@@ -82,6 +74,12 @@
       "id": "c7d0",
       "name": "Press cott",
       "email": "aaaa@example.com",
+      "phone": "000-222-111-633"
+    },
+    {
+      "id": "2248",
+      "name": "ephraim imhagbe",
+      "email": "iphraimunlimited2001@gmail.com",
       "phone": "000-222-111-633"
     }
   ]
