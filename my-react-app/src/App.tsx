@@ -3,14 +3,13 @@
 import './index.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Counter from './projects/REDUX/counter/Counter';
-import CounterCopy from './projects/REDUX/counter copy/Counter';
+import UseStateHook from './projects/Hooks/useStateHook';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<CounterCopy />}></Route>
+        <Route path="/" element={<UseStateHook />}></Route>
 
         {/* <Route path="/" element={<Home />}></Route>
         <Route path="/create" element={<Create />}></Route>
