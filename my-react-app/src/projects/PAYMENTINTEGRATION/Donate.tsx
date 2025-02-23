@@ -29,7 +29,7 @@ export default function Donate() {
       ],
     },
     publicKey: PUBLIC_KEY,
-    text: 'Donate',
+    text: 'Paystack Donate',
     onSuccess: () => alert('Thank you for donating'),
     onClose: () => alert('Are you sure you want to close?'),
   };
