@@ -12,10 +12,19 @@ export default function FlutterPayment() {
   const [phoneNumber, setPhoneNumber] = useState<string>('');
 
   const navigate = useNavigate();
+
+  interface FlutterwaveResponse {
+    status: string;
+    transaction_id?: string;
+    tx_ref?: string;
+  }
+
+  const amountValue = parseFloat(amount) || 0;
+
   const config = {
     public_key: 'FLWPUBK_TEST-561a4bfc67c807f616b0d924b3c066e3-X',
     tx_ref: Date.now().toString(),
-    amount: parseFloat(amount) || 0,
+    amount: amountValue,
     currency: 'NGN',
     payment_options: 'card,mobilemoney,ussd',
     customer: {
@@ -33,7 +42,7 @@ export default function FlutterPayment() {
   const fwConfig = {
     ...config,
     text: 'Pay with Flutterwave',
-    callback: (response: any) => {
+    callback: (response: FlutterwaveResponse) => {
       if (response.status !== 'completed') {
         console.log('Failed Transaction');
       } else {
