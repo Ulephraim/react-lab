@@ -12,6 +12,7 @@ import Read from './projects/CRUD/read';
 import HomePage from './projects/Home';
 import Donate from './projects/PAYMENTINTEGRATION/Donate';
 import FlutterPayment from './projects/PAYMENTINTEGRATION/Payment';
+import SendMails from './projects/MAILING/sendMails';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/update/:id" element={<Update />}></Route>
         <Route path="/read/:id" element={<Read />}></Route>
         <Route path="/payment" element={<FlutterPayment />} />
+        <Route path="/mail" element={<SendMails />} />
       </Routes>
     </BrowserRouter>
   );

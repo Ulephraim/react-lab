@@ -8,7 +8,8 @@ export default function HomePage() {
       Welcome Home <br />
       <Link to="/crud-home">CRUD</Link> <br />
       <Link to="/donate">Donate</Link> <br />
-      <Link to="/payment">Payment</Link>
+      <Link to="/payment">Payment</Link> <br />
+      <Link to='/mail'>Mail</Link>
     </div>
   );
 }
