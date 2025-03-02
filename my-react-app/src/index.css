@@ -7,6 +7,55 @@
   background-color: white;
 }
 
+/* Home */
+
+.home-container {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Make sure the buttons are responsive on smaller screens */
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
 /* Page button styling */
 .page-btn {
   padding: 1rem;
@@ -302,7 +351,6 @@ strong {
 .donate-button:hover {
   background-color: #0056b3;
 }
-
 
 .mail-container {
   display: flex;
