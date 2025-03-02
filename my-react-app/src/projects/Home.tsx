@@ -9,7 +9,8 @@ export default function HomePage() {
       <Link to="/crud-home">CRUD</Link> <br />
       <Link to="/donate">Donate</Link> <br />
       <Link to="/payment">Payment</Link> <br />
-      <Link to='/mail'>Mail</Link>
+      <Link to="/mail">Mail</Link> <br />
+      <Link to="/grid">Grid</Link>
     </div>
   );
 }
