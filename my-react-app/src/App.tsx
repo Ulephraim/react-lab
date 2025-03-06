@@ -15,6 +15,7 @@ import SendMails from './projects/MAILING/sendMails';
 import Grid from './projects/GRID/grid';
 import Query from './projects/QUERY/query';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import ZustandPage from './projects/ZUSTAND/page';
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/mail" element={<SendMails />} />
           <Route path="/grid" element={<Grid />} />
           <Route path="/query" element={<Query />} />
+          <Route path="/zustand" element={<ZustandPage />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

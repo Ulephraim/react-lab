@@ -25,6 +25,10 @@ export default function HomePage() {
         <Link to="/query" className="btn">
           React Query
         </Link>
+
+        <Link to="/zustand" className="btn">
+          Zustand State
+        </Link>
       </div>
     </div>
   );

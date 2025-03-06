@@ -7,10 +7,11 @@ import { useState } from 'react';
 function Query() {
   const queryClient = useQueryClient();
 
+  const [search, setSearch] = useState<string>('');
   const [title, setTitle] = useState<string>('');
   const { data: todos, isLoading } = useQuery({
-    queryFn: () => fetchTodos(),
-    queryKey: ['todos'],
+    queryFn: () => fetchTodos(search),
+    queryKey: ['todos', { search }],
   });
 
   const { mutateAsync: addTodoMutation } = useMutation({
